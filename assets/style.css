@@ -257,7 +257,9 @@ header.sticky {
   background-color: var(--second-background-color);
   text-align: center;
   padding: 30px 20px;
+  box-shadow: var(--second-color) 0px 0px 2px;
   transition: all 0.45s ease;
+
 }
 .my-skills-box i {
   font-size: 80px;
@@ -292,6 +294,7 @@ header.sticky {
   background: var(--background-color);
   padding: 35px 45px;
   border-radius: 8px;
+  box-shadow: var(--second-color) 0px 0px 2px;
   transition: all 0.45s ease;
 }
 
@@ -354,6 +357,7 @@ header.sticky {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: var(--second-color) 0px 0px 2px;                         
 }
 
 .row img {
@@ -475,6 +479,7 @@ header.sticky {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  box-shadow: var(--second-color) 0px 0px 3px;
   margin-right: 15px;
   transition: all 0.45s ease;
 }
@@ -499,6 +504,7 @@ form textarea {
   font-size: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
+  box-shadow: var(--second-color) 0px 0px 1px;
 }
 
 .contact-form textarea {
