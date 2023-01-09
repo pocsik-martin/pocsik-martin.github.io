@@ -1,12 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css".css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!--Header start-->
+    <header>
+      <!--Logo-->
+      <a href="#" class="logo">Web<span>Dev</span></a>
+      <!--Navigation-->
+      <nav>
+        <ul class="navlist">
+          <li><a href="#main" class="active">Main</a></li>
+          <li><a href="#about" class="">About Me</a></li>
+          <li><a href="#my-skills" class="">My Skills</a></li>
+          <li><a href="#services" class="">Services</a></li>
+          <li><a href="#portfolio" class="">Portfolio</a></li>
+          <li><a href="#contact" class="">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!--Main section-->
+    <section class="main" id="main">
+      <div class="main-section-text">
+        <div class="slide">
+          <span class="welcome">Welcome to my world</span>
+        </div>
+        <h1>Hi, I'am <span>Martin</span></h1>
+        <h3>a Developer</h3>
+        <p>
+          I'm a Web developer. Brings ideas to life with code.<br />
+          Get ready to turn your ideas into reality. I'm glad you're here.
+        </p>
+      </div>
+      <div class="find-with-me">
+        <h2>Find with me</h2>
+        <nav class="contact-icons">
+          <a href=""><i class="bx bxl-github"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-linkedin-square"></i></a>
+          <a href=""><i class="bx bxl-facebook-square"></i></a>
+        </nav>
+      </div>
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./assets/images/about-me.jpeg" alt="" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          cupiditate, assumenda sapiente doloremque dignissimos quibusdam ex
+          ipsam maiores, doloribus, inventore natus esse mollitia itaque quia
+          praesentium atque deserunt a! Repellat expedita sequi nobis voluptates
+          eaque enim, sed sint praesentium suscipit ut molestias accusantium
+          corporis minus nulla mollitia doloremque obcaecati ea laborum tempore
+          excepturi eveniet distinctio placeat architecto. Eos architecto
+          provident eaque atque quasi. Nihil iusto possimus exceptur.eaque enim,
+          sed sint praesentium suscipit ut molestias accusantium corporis minus
+          nulla mollitia doloremque obcaecati ea laborum tempore excepturi
+          eveniet distinctio placeat architecto. Eos architecto provident eaque
+          atque quasi. Nihil iusto possimus exceptur.
+        </p>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </section>
+    <!--My skills-->
+
+    <section class="my-skills" id="my-skills">
+      <div class="main-text">
+        <h2><span>My</span> skills</h2>
+      </div>
+      <div class="my-skills-container">
+        <div class="my-skill-box">
+          <i class="bx bxl-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+
+        <div class="my-skill-box">
+          <i class="bx bxl-css3"></i>
+          <h3>CSS3</h3>
+        </div>
+
+        <div class="my-skill-box">
+          <i class="bx bxl-javascript"></i>
+          <h3>JavaScript</h3>
+        </div>
+
+        <div class="my-skill-box">
+          <i class="bx bxl-sass"></i>
+          <h3>SASS</h3>
+        </div>
+
+        <div class="my-skill-box">
+          <i class="bx bxl-jquery"></i>
+          <h3>JQuery</h3>
+        </div>
+
+        <div class="my-skill-box">
+          <i class="bx bxl-git"></i>
+          <h3>Git</h3>
+        </div>
+
+        <div class="my-skill-box">
+          <i class="bx bxl-python"></i>
+          <h3>Python</h3>
+        </div>
+
+        <div class="my-skill-box">
+          <i class="bx bxl-nodejs"></i>
+          <h3>Node.js</h3>
+        </div>
+      </div>
+    </section>
+
+    <!--Sercives-->
+    <section class="services" id="services">
+      <div class="main-text">
+        <h2><span>My</span> services</h2>
+      </div>
+      <div class="services-content">
+        <div class="box">
+          <div class="s-icons">
+            <i class="bx bx-expand-horizontal"></i>
+          </div>
+          <h3>Web developer</h3>
+          <p>
+            Creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app
+          </p>
+          <a href="#" class="services-button">Let's talk</a>
+        </div>
+
+        <div class="box">
+          <div class="s-icons">
+            <i class="bx bx-expand-horizontal"></i>
+          </div>
+          <h3>Web Developer</h3>
+          <p>
+            Creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app
+          </p>
+          <a href="#" class="services-button">Let's talk</a>
+        </div>
+
+        <div class="box">
+          <div class="s-icons">
+            <i class="bx bx-expand-horizontal"></i>
+          </div>
+          <h3>Web developer</h3>
+          <p>
+            Creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app
+          </p>
+          <a href="#" class="services-button">Let's talk</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Portfolio start-->
+    <section id="portfolio" class="portfolio">
+      <div class="main-text">
+        <h2><span>Latest</span> Projects</h2>
+      </div>
+
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="./assets/images/portfolio.jpeg" alt="Portfolio-1" />
+          <div class="layer">
+            <h5>Visual Design</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+              illum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="./assets/images/portfolio.jpeg" alt="Portfolio-1" />
+          <div class="layer">
+            <h5>Visual Design</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+              illum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="./assets/images/portfolio.jpeg" alt="Portfolio-1" />
+          <div class="layer">
+            <h5>Visual Design</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+              illum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="./assets/images/portfolio.jpeg" alt="Portfolio-1" />
+          <div class="layer">
+            <h5>Visual Design</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+              illum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="./assets/images/portfolio.jpeg" alt="Portfolio-1" />
+          <div class="layer">
+            <h5>Visual Design</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+              illum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="./assets/images/portfolio.jpeg" alt="Portfolio-1" />
+          <div class="layer">
+            <h5>Visual Design</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+              illum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---Contact Start-->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me!</span></h2>
+        <h4>If You Have Any Project In Your Mind.</h4>
+        <p>
+          I'm a Frontend Developer <br>
+          Before start the order! Please Text ME to discuss the project details. 
+        </p>
+        <ul class="list">
+          <li><a href="#">+36204208902</a></li>
+          <li><a href="#">pocsik.martin98@gmail.com</a></li>
+        </ul>
+
+        <nav class="contact-icons">
+          <a href=""><i class="bx bxl-github"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-linkedin-square"></i></a>
+          <a href=""><i class="bx bxl-facebook-square"></i></a>
+        </nav>
+      </div>
+
+      <div class="contact-form">
+        <form action="https://formspree.io/f/mbjbeadb" method="post">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Your Email Address"
+            required
+          />
+          <input
+            type="tel"
+            name="Phone-Number"
+            placeholder="Your Mobile Number"
+            required
+          />
+          <textarea
+            name="Message"
+            placeholder="How Can I Help You"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" class="submit" />
+        </form>
+      </div>
+    </section>
+
+    <!--Footer Start-->
+    <section class="end">
+      <div class="last-text">
+        <p>Copyright &copy by Martin Pócsik All rights Reserved.</p>
+      </div>
+
+      <div class="top">
+        <a href="#main"
+          ><i><i class="bx bx-up-arrow-alt"></i></i
+        ></a>
+      </div>
+    </section>
+
+    <!---Js link-->
+    <script type="text/javascript" src="./assets/script.js"></script>
+  </body>
 </html>
