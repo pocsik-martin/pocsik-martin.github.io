@@ -1,3 +1,6 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap'); 
+
 /*Root start*/
 :root {
   --background-color: #2a2a2a;
@@ -16,7 +19,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
@@ -25,6 +27,7 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -45,6 +48,7 @@ header {
   padding: 22px 15%;
   border-bottom: 1px solid transparent;
   transition: all 0.45s ease;
+  font-family: 'Playfair Display', serif;
 }
 
 .logo {
@@ -64,17 +68,13 @@ span {
 
 .navlist a {
   color: var(--second-color);
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0 25px;
   transition: all 0.45s ease;
 }
 
 .navlist a:hover {
-  color: var(--main-color);
-}
-
-.navlist a.active {
   color: var(--main-color);
 }
 
@@ -243,6 +243,11 @@ header.sticky {
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 50px;
 }
+.my-skills img
+{
+  height: 80px;
+  width: auto;
+}
 
 .my-skills-container {
   display: grid;
@@ -257,12 +262,8 @@ header.sticky {
   background-color: var(--second-background-color);
   text-align: center;
   padding: 30px 20px;
-  box-shadow: var(--second-color) 0px 0px 2px;
+  box-shadow: var(--second-color) 0px 0px 3px;
   transition: all 0.45s ease;
-
-}
-.my-skills-box i {
-  font-size: 80px;
 }
 
 .my-skills-box h3 {
@@ -294,7 +295,7 @@ header.sticky {
   background: var(--background-color);
   padding: 35px 45px;
   border-radius: 8px;
-  box-shadow: var(--second-color) 0px 0px 2px;
+  box-shadow: var(--second-color) 0px 0px 3px 1px;
   transition: all 0.45s ease;
 }
 
@@ -357,7 +358,6 @@ header.sticky {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: var(--second-color) 0px 0px 2px;                         
 }
 
 .row img {
@@ -449,24 +449,22 @@ header.sticky {
   margin-bottom: 30px;
 }
 
-.list {
+.contact-list {
   margin-bottom: 2.8rem;
 }
 
-.list li {
+.contact-list li {
   margin-bottom: 12px;
-}
-
-.list li a {
   display: block;
   color: var(--second-color);
   font-size: var(--p-font-size);
   transition: all 0.45s ease;
 }
 
-.list li a:hover {
+.contact-list li:hover {
   color: var(--text-color);
   transform: translateX(5px);
+  cursor: pointer;
 }
 
 .contact-icons i {
