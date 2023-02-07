@@ -9,9 +9,9 @@
   --h2-font-size: 3rem;
   --p-font-size: 1.1rem;
 }
-/**Root End/
-  
-  /*Base start*/
+/*Root End*/
+
+/*Base start*/
 * {
   padding: 0;
   margin: 0;
@@ -30,8 +30,8 @@ body {
 section {
   padding: 160px 15% 120px;
 }
-/*Base end/
-  
+/*Base end*/
+
 /*Header Start*/
 header {
   position: fixed;
@@ -135,8 +135,8 @@ header.sticky {
 .main-section-text p {
   color: var(--second-color);
   font-size: var(--p-font-size);
-  line-height: 1.8;
-  margin-bottom: 40px;
+  line-height: 2;
+  margin-bottom: 50px;
 }
 
 .btn:hover {
@@ -148,11 +148,11 @@ header.sticky {
 }
 
 .contact-icons i {
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   background-color: var(--main-color);
   color: var(--second-background-color);
-  font-size: 22px;
+  font-size: 25px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -169,7 +169,7 @@ header.sticky {
 }
 
 .main h2 {
-  font-size: 24px;
+  font-size: 30px;
 }
 /*Main end*/
 
@@ -202,12 +202,6 @@ header.sticky {
   font-size: var(--p-font-size);
   line-height: 1.8;
   margin-bottom: 4rem;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .btn {
@@ -333,7 +327,6 @@ header.sticky {
   background-color: var(--background-color);
   padding: 35px 45px;
   border-radius: 8px;
-  box-shadow: var(--second-color) 0px 0px 3px 1px;
   transition: all 0.45s ease;
 }
 
@@ -390,160 +383,162 @@ header.sticky {
   gap: 2.5rem;
   margin-top: 5rem;
 }
+.portfolio-content-details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portfolio-content-details a,
+.portfolio-content-details p {
+  color: var(--text-color);
+}
+
+.portfolio-content-details p {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.portfolio-content-details i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: var(--main-color);
+  color: var(--background-color);
+  border-radius: 5px;
+}
 
 .row {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-}
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  background-color: var(--second-background-color);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
 
 .row img {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
   display: block;
-  transition: transform 0.5s;
+  border-radius: 5px;
 }
 
-.layer {
-  width: 100%;
-  height: 0%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
-  position: absolute;
-  border-radius: 8px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 40px;
-  transition: height 0.5s;
-}
-
-.layer h5 {
-  font-size: 20px;
-  font-weight: 600;
+.row h3 {
+  font-size: 24px;
+  align-self: center;
   margin-bottom: 15px;
-}
-
-.layer p {
-  color: var(--second-color);
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.layer i {
-  color: var(--main-color);
-  margin-top: 20px;
-  font-size: 20px;
-  background-color: var(--second-background-color);
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.row:hover img {
-  transform: scale(1.1);
-}
-
-.row:hover .layer {
-  height: 100%;
+  margin-top: 15px;
 }
 
 /*Portfolio end*/
 
 /*Contact Start*/
-.contact {
+#contact {
   background-color: var(--second-background-color);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2.5rem;
+}
+.contact-info {
+  margin-bottom: 20px;
+  line-height: 2.2;
 }
 
-.contact-text h4 {
-  color: var(--text-color);
-  margin: 18px 0;
+.wrapper {
+}
+
+.contact-info ul li {
   font-size: 20px;
-  font-weight: 600;
 }
 
-.contact-text h2 {
-  font-size: var(--h2-font-size);
-  line-height: 1;
+.contact-info h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
-.contact-text p {
-  color: var(--second-color);
-  font-size: var(--p-font-size);
-  line-height: 1.8;
-  margin-bottom: 30px;
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contact-info p {
+  font-size: 17px;
+  margin-bottom: 20px;
 }
 
-.contact-list {
-  margin-bottom: 2.8rem;
+.contact {
 }
 
-.contact-list li {
-  margin-bottom: 12px;
-  display: block;
-  color: var(--second-color);
-  font-size: var(--p-font-size);
-  transition: all 0.45s ease;
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
-.contact-list li:hover {
-  color: var(--text-color);
-  transform: translateX(5px);
-  cursor: pointer;
+.contact form .full {
+  grid-column: 1 / 3;
 }
 
-.contact-form form {
-  position: relative;
-}
-
+.contact form button,
 .contact form input,
-form textarea {
+.contact form textarea {
   width: 100%;
-  padding: 14px;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  padding: 1em;
+  border-radius: 5px;
   border: none;
-  outline: none;
-  font-size: 15px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  box-shadow: var(--second-color) 0px 0px 1px;
+  background-color: var(--background-color);
 }
 
-.contact-form textarea {
+div label {
+  color: var(--text-color);
+}
+
+.contact form textarea {
   resize: none;
   height: 240px;
 }
 
-.contact-form .submit {
-  display: inline-block;
-  font-size: 16px;
-  background-color: var(--main-color);
+.contact form button {
+  background: var(--main-color);
+  border: 0;
   color: var(--background-color);
-  width: 160px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
   transition: all 0.45s ease;
 }
 
-.contact-form .submit:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+.contact form button:hover {
+  transform: scale(1.03);
 }
-::placeholder {
-  color: var(--text-color);
-  font-family: "Playfair Display", serif;
+
+@media only screen and (min-width: 1100px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .contact-info {
+    border-radius: 4px 0 0 4px;
+    width: 500px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .contact-info h3,
+  .contact-info ul,
+  .brand {
+    text-align: left;
+  }
 }
 /*Contact end*/
 
@@ -579,10 +574,11 @@ form textarea {
     transition: 0.1s;
   }
 
-  header .sticky {
+  header.sticky {
     padding: 10px;
     transition: 0.1s;
   }
+
 
   section {
     padding: 110px 3% 60px;
@@ -663,17 +659,22 @@ form textarea {
 
 @media (max-width: 576px) {
   :root {
-    --big-font-size: 2.5rem;
-    --h2-font-size: 1.8rem;
-    --p-font-size: 1rem;
+    --big-font-size: 2.9rem;
+    --h2-font-size: 2rem;
+    --p-font-size: 1.2rem;
     transition: 0.1s;
   }
 
-  .main-text h3 {
+  .main-section-text h3 {
     font-size: 2.5rem;
   }
 
   .main p {
-    font-size: 0.72rem;
+    font-size: 0.9rem;
   }
+
+  .welcome {
+    font-size: 1.5rem;
+  }
+
 }
