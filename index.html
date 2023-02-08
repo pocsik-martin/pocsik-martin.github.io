@@ -29,7 +29,7 @@
       <!--Logo-->
       <a href="#" class="logo">Web<span>Dev</span></a>
       <!--Navigation-->
-      <nav>
+      <nav role="navigation" aria-label="main">
         <ul class="navlist">
           <li><a href="#main" class="active">Main</a></li>
           <li><a href="#about" class="">About Me</a></li>
@@ -57,17 +57,17 @@
       </div>
       <div class="find-with-me">
         <h2>Find with me</h2>
-        <nav class="contact-icons">
-          <a href="https://github.com/pocsik-martin" target="_blank"
+        <nav class="contact-icons" role="navigation" aria-label="find-with-me">
+          <a href="https://github.com/pocsik-martin" target="_blank"  aria-label="My github page"
             ><i class="bx bxl-github"></i
           ></a>
-          <a href="https://twitter.com/PocsikMartin" target="_blank"
+          <a href="https://twitter.com/PocsikMartin" target="_blank"  aria-label="My twitter page"
             ><i class="bx bxl-twitter"></i
           ></a>
-          <a href="https://www.linkedin.com/" target="_blank"
+          <a href="https://www.linkedin.com/" target="_blank"  aria-label="My linkedin page"
             ><i class="bx bxl-linkedin-square"></i
           ></a>
-          <a href="https://www.facebook.com/" target="_blank"
+          <a href="https://www.facebook.com/" target="_blank"  aria-label="My facebook page"
             ><i class="bx bxl-facebook-square"></i
           ></a>
         </nav>
@@ -285,18 +285,18 @@
               <li><i class="bx bxs-envelope"></i> pocsik.martin98@gmail.com</li>
             </ul>
 
-            <div class="find-with-me">
+            <div class="find-with-me" role="navigation" aria-label="find-with-me">
               <nav class="contact-icons">
-                <a href="https://github.com/pocsik-martin" target="_blank"
+                <a href="https://github.com/pocsik-martin" target="_blank" aria-label="My github page"
                   ><i class="bx bxl-github"></i
                 ></a>
-                <a href="https://twitter.com/PocsikMartin" target="_blank"
+                <a href="https://twitter.com/PocsikMartin" target="_blank" aria-label="My twitter page"
                   ><i class="bx bxl-twitter"></i
                 ></a>
-                <a href="https://www.linkedin.com/" target="_blank"
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="My linkedin page"
                   ><i class="bx bxl-linkedin-square"></i
                 ></a>
-                <a href="https://www.facebook.com/" target="_blank"
+                <a href="https://www.facebook.com/" target="_blank" aria-label="My facebook page"
                   ><i class="bx bxl-facebook-square"></i
                 ></a>
               </nav>
@@ -304,29 +304,29 @@
           </div>
 
           <div class="contact">
-            <form id="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/mbjbeadb" method="POST">
               <div>
-                <label>Name*</label>
+                <label for="name">Name*</label>
                 <input type="text" name="name" id="name" required />
               </div>
 
               <div>
-                <label>Company</label>
+                <label for="company" >Company</label>
                 <input type="text" name="company" id="company" />
               </div>
 
               <div>
-                <label>E-mail Address*</label>
+                <label for="email">E-mail Address*</label>
                 <input type="email" name="email" id="email" required />
               </div>
 
               <div>
-                <label>Phone Number*</label>
+                <label for="phone">Phone Number*</label>
                 <input type="text" name="phone" id="phone" />
               </div>
 
               <div class="full">
-                <label>Message</label>
+                <label for="message">Message</label>
                 <textarea name="message" rows="5" id="message"></textarea>
               </div>
 
